@@ -9,6 +9,18 @@ def index(request):
     }
     return render(request, 'index.html',context)
 
+class AboutView(TemplateView):
+    template_name = 'about.html';
+
+
+class ContactView(TemplateView):
+    template_name = 'contact.html';    
+
+
+class CategoryView(TemplateView):
+    template_name = 'fashion.html';
+
+
 
 
 
