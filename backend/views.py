@@ -20,6 +20,9 @@ class ContactView(TemplateView):
 class CategoryView(TemplateView):
     template_name = 'fashion.html';
 
+class Home2View(TemplateView):
+    template_name = 'index-2.html';   
+
 
 
 
