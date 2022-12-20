@@ -23,6 +23,10 @@ class CategoryView(TemplateView):
 class Home2View(TemplateView):
     template_name = 'index-2.html';   
 
+class Home3View(TemplateView):
+    template_name = 'index-3.html';
+
+
 
 
 
