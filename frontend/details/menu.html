@@ -27,10 +27,10 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{% url 'index' %}">Home 1</a>
                                 <a class="dropdown-item" href="{% url 'index2' %}">Home 2</a>
-                                <a class="dropdown-item" href="index-3.html">Home 3</a>
-                                <a class="dropdown-item" href="index-4.html">Home 4</a>
-                                <a class="dropdown-item" href="index-5.html">Home 5</a>
-                                <a class="dropdown-item" href="index-6.html">Home 6</a>
+                                <a class="dropdown-item" href="{% url 'index3' %}">Home 3</a>
+                                <a class="dropdown-item" href="{% url 'index4' %}">Home 4</a>
+                                <a class="dropdown-item" href="{% url 'index5' %}">Home 5</a>
+                                <a class="dropdown-item" href="{% url 'index6' %}">Home 6</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -52,10 +52,10 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
                               <a class="dropdown-item" href="post-video.html">Video Formats</a>
-                              <a class="dropdown-item" href="post-audio.html">Audio Format</a>
+                              <a class="dropdown-item" href="{% url 'post-audio' %}">Audio Format</a>
                               <a class="dropdown-item" href="post-link.html">Quote Format</a>
-                              <a class="dropdown-item" href="post-gallery.html">Gallery Format</a>
-                              <a class="dropdown-item" href="post-image.html">Image Format</a>
+                              <a class="dropdown-item" href="{% url 'post-gallery' %}">Gallery Format</a>
+                              <a class="dropdown-item" href="{% url 'post-image' %}">Image Format</a>
                             </div>
                         </li>
                         

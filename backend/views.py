@@ -26,6 +26,29 @@ class Home2View(TemplateView):
 class Home3View(TemplateView):
     template_name = 'index-3.html';
 
+class Home4View(TemplateView):
+    template_name = 'index-4.html';
+
+class Home5View(TemplateView):
+    template_name = 'index-5.html';    
+
+class Home6View(TemplateView):
+    template_name = 'index-6.html';   
+
+class PostaudioView(TemplateView):
+    template_name = 'post-audio.html';
+
+class PostgalleryView(TemplateView):
+    template_name = 'post-gallery.html'; 
+
+class PostimageView(TemplateView):
+    template_name = 'post-image.html';    
+
+
+
+
+
+
 
 
 
