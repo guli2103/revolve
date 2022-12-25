@@ -14,5 +14,6 @@ urlpatterns = [
    path('post-audio/', PostaudioView.as_view(), name='post-audio'),
    path('post-gallery/', PostgalleryView.as_view(), name='post-gallery'),
    path('post-image/', PostimageView.as_view(), name= 'post-image'), 
-
+   path('post-link/', PostlinkView.as_view(), name='post-link'),
+   path('post-video/', PostvideoView.as_view(), name='post-video')
 ]

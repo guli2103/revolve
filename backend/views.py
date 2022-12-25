@@ -42,7 +42,14 @@ class PostgalleryView(TemplateView):
     template_name = 'post-gallery.html'; 
 
 class PostimageView(TemplateView):
-    template_name = 'post-image.html';    
+    template_name = 'post-image.html'; 
+
+class PostlinkView(TemplateView):
+    template_name = 'post-link.html';
+
+class PostvideoView(TemplateView):
+    template_name = 'post-video.html';    
+
 
 
 
