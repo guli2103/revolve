@@ -48,7 +48,10 @@ class PostlinkView(TemplateView):
     template_name = 'post-link.html';
 
 class PostvideoView(TemplateView):
-    template_name = 'post-video.html';    
+    template_name = 'post-video.html'; 
+
+class StandardfullView(TemplateView):
+    template_name = 'standard-fullwidth.html';           
 
 
 
