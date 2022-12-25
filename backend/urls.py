@@ -17,4 +17,6 @@ urlpatterns = [
    path('post-link/', PostlinkView.as_view(), name='post-link'),
    path('post-video/', PostvideoView.as_view(), name='post-video'),
    path('standard-fullwidth/', StandardfullView.as_view(), name='standard-fullwidth'),
+   path('standard-left/', StandardleftView.as_view(), name='standard-left'),
+   path('standard-right/',StandardrightView.as_view(), name='standard-right'),
 ]

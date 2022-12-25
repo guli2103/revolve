@@ -51,10 +51,13 @@ class PostvideoView(TemplateView):
     template_name = 'post-video.html'; 
 
 class StandardfullView(TemplateView):
-    template_name = 'standard-fullwidth.html';           
+    template_name = 'standard-fullwidth.html';   
 
+class StandardleftView(TemplateView):
+    template_name = 'standard-left-sidebar.html';            
 
-
+class StandardrightView(TemplateView):
+    template_name = 'standard-right-sidebar.html';
 
 
 
