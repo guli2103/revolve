@@ -14,19 +14,21 @@
 		<div class="row no-gutters">
 			<div class="col-lg-12 col-sm-12 col-md-12 slider-wrap">
 	            <div class="slider-item">
+					{% for toppost in topposts %}
 	               <div class="slider-item-content">
 						<div class="post-thumb mb-4">
 							<a href="blog-single.html">
-								<img src="{% static 'images/slider/slider1.jpg' %}" alt="" class="img-fluid">
+								<img src="{{ toppost.img }}" alt="" class="img-fluid">
 							</a>
 						</div>
 
 						<div class="slider-post-content">
-							<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
-							<h3 class="post-title mt-1"><a href="blog-single.html">Tips for Taking a Long-term Trip</a></h3>
-							<span class=" text-muted  text-capitalize">January 2, 2019</span>
+							<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">{{ toppost.name }}</span>
+							<h3 class="post-title mt-1"><a href="{% url 'about' toppost.slug %}">{{ toppost.content }}</a></h3>
+							<span class=" text-muted  text-capitalize">{{ toppost.date }}</span>
 						</div>
 	               </div>
+				   {% endfor %}
 	            </div>    
 
 			

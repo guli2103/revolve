@@ -4,13 +4,19 @@ from .models import *
 
 def index(request):
     postts = Post1.objects.all()
+    topposts = TopPost1.objects.all()
     context = {
-        'postts' : postts
+        'postts' : postts,
+        'topposts' : topposts,
     }
     return render(request, 'index.html',context)
 
-class AboutView(TemplateView):
-    template_name = 'about.html';
+def about(request, slug):
+    post = TopPost1.objects.get(slug = slug)
+    context = {
+        'post' : post
+    }   
+    return render(request, 'about.html', context)
 
 
 class ContactView(TemplateView):
