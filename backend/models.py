@@ -16,3 +16,6 @@ class Post1(models.Model):
     def __str__(self):
         return self.context
 
+
+
+
