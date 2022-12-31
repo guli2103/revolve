@@ -11,13 +11,16 @@ def index(request):
     }
     return render(request, 'index.html',context)
 
-def about(request, slug):
-    post = TopPost1.objects.get(slug = slug)
-    context = {
-        'post' : post
-    }   
-    return render(request, 'about.html', context)
+# def about(request, slug):
+#     post = TopPost1.objects.get(slug = slug)
+#     context = {
+#         'post' : post
+#     }   
+#     return render(request, 'about.html', context)
 
+
+class AboutView(TemplateView):
+    template_name = 'about.html';
 
 class ContactView(TemplateView):
     template_name = 'contact.html';    
